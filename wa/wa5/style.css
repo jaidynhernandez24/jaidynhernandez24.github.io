@@ -50,9 +50,41 @@ p, li, table {
 }
 
 /* || header layout */
+nav {
+  height: 50px;
+  background-color: ff80ff;
+  display: flex;
+  padding: 1% 0;
+  margin-bottom: 10px;
+}
 
-div[class="nav"], article, footer, .secondary {
-  background-color: green;
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+nav .search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
 }
 
 article, footer, .secondary {
@@ -61,43 +93,6 @@ article, footer, .secondary {
 
 article {
   margin-right: 10px;
-}
-
-div[class="nav"] {
-  height: 50px;
-  background-color: ff80ff;
-  display: flex;
-  padding: 1% 0;
-  margin-bottom: 10px;
-}
-
-div[class="nav"] ul {
-  padding: 0;
-  list-style-type: none;
-  flex: 2;
-  display: flex;
-}
-
-div[class="nav"] li {
-  display: inline;
-  text-align: center;
-  flex: 1;
-}
-
-div[class="nav"] a {
-  display: inline-block;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-}
-
-div[class="nav"] .search {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 2em;
 }
 
 .search input {
