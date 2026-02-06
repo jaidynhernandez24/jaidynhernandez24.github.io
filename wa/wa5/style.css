@@ -114,6 +114,26 @@ article {
 
 /* || main layout */
 /* Updated background colors for article, secondary, and footer to white to create contrast and readability.*/
+/* ----
+   COLOR CONTRAST REPORT
+
+   Body text (#2a2a2a) on background (#dde):
+   Contrast ratio: 10.69:1
+   Passes WCAG AAA
+
+   Navigation links (#000000) on #ffffff:
+   Contrast ratio: 21:1
+   Passes WCAG AAA
+
+   Button text (#ffffff) on #333333:
+   Contrast ratio: 12.63:1
+   Passes WCAG AAA
+
+   Table text (#2a2a2a) on #dde:
+   Contrast ratio: 10.69:1
+   Passes WCAG AAA
+---- */
+
 
 main {
   display: flex;
