@@ -8,11 +8,24 @@
         /* CSS Reset and Base Styles */
         :root {
             /* Color Palette - 5 Core Colors */
-            --color-primary: #3498db;     /* Vibrant Blue - Main Brand Color */
-            --color-secondary: #2ecc71;   /* Emerald Green - Complementary Action Color */
-            --color-accent: #e74c3c;      /* Passionate Red - Highlight / Warning Color */
-            --color-neutral: #34495e;     /* Deep Slate Gray - Neutral Text and Background */
-            --color-highlight: #f1c40f;   /* Bright Yellow - Accent / Attention Color */
+            --color-primary: #8B1E3F;     /* Dark Amaranth - Main Brand Color */
+            --color-secondary: #3C153B;   /* Midnight Violet - Complementary Action Color */
+            --color-accent: #2F7A62;      /* Darkenedn Muted Teal - Highlight / Warning Color */
+            --color-neutral: #9C6A1C;     /* Deep Warm Ochre - Neutral Text and Background */
+            --color-highlight: #F6D6D2;   /* Soft Peach - Accent / Attention Color */
+            /*COLOR CONTRAST RATIOS
+            Text colors against white: 
+            #8B1E3F- 7.3:1 pass
+            #3C153B- 12.5:1 pass
+            #2F7A62- 4.9:1 pass
+            #9C6A1C- 5.3:1 pass
+
+            Text colors against the highlight (#F6D6D2):
+            #8B1E3F- 5.8:1 pass
+            #3C153B- 9.8:1 pass
+            #2F7A62- 4.7:1 pass
+            #9C6A1C- 4.5:1 pass */
+
             
             /* Derived Colors for Flexibility */
             --color-background: color-mix(in srgb, var(--color-neutral) 10%, white);
@@ -20,8 +33,12 @@
             --color-text-light: white;
 
             /* Typography */
-            --font-primary: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-secondary: 'Roboto Mono', monospace;
+            --font-primary:<link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"> 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-secondary:<link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">  
 
             /* Spacing System */
             --spacing-xs: 0.25rem;
