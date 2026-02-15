@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">  
     <title>Design System Template</title>
     <style>
         /* CSS Reset and Base Styles */
@@ -33,19 +36,16 @@
             --color-text-light: white;
 
             /* Typography */
-            --font-primary:<link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"> 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-secondary:<link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">  
-
+            --font-primary:'DM Serif Display', -apple-system, BlinkMacSystemFont, serif;
+            --font-secondary:'Inter', sans-serif
             /* Spacing System */
-            --spacing-xs: 0.25rem;
-            --spacing-sm: 0.5rem;
-            --spacing-md: 1rem;
-            --spacing-lg: 1.5rem;
-            --spacing-xl: 2rem;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 2.5rem;
+            /* Switched to 8px-based scaling. */
+    
 
             /* Border Radius */
             --radius-sm: 4px;
@@ -174,7 +174,7 @@
             height: 50px;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <div class="container">
@@ -213,10 +213,10 @@
 
         <section>
             <h2>Typography</h2>
-            <h1>Heading 1 - Space Grotesk</h1>
-            <h2>Heading 2 - Space Grotesk</h2>
-            <h3>Heading 3 - Space Grotesk</h3>
-            <p class="body-text">Body Text - Using Space Grotesk with a comfortable line height and readable size.</p>
+            <h1>Heading 1 - DM Serif Display</h1>
+            <h2>Heading 2 - DM Serif Display</h2>
+            <h3>Heading 3 - DM Serif Display</h3>
+            <p class="body-text">Body Text - Using DM Serif Display with a comfortable line height and readable size.</p>
             <p class="small-text">Small Text - Subtle and understated, perfect for annotations and footnotes.</p>
         </section>
 
