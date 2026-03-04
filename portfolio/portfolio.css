@@ -56,6 +56,21 @@ header {
     padding-right: 100px
 }
 
+header{
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Bodoni Moda','Playfair Display', sans-serif;
+    font-size: clamp(48px, 8vw, 140px);
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.container {
+    padding: 0 20px;
+}
 /* BODY STUFF */
 body {
     font-family: 'Merriweather', sans-serif;
@@ -67,7 +82,7 @@ h2{
     font-size: 19px;
 }
 
-.split-section {
+/* .split-section {
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -84,4 +99,29 @@ h2{
     width: 100%;
     height: auto;
     border-radius: 10px;
+} */
+
+.image-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.vertical {
+flex: 0 1 30%;
+padding-right: 10px;
+}
+
+.horizontal {
+    flex: 0 1 50%;
+    padding-left: 10px;
+}
+
+.image-buttons img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
