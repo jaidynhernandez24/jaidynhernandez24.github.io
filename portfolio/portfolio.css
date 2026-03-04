@@ -1,5 +1,87 @@
-nav {
-    text-align: center;
-    background: lightblue;
-    border: 3px solid blue;
+
+
+/* NAVIGATION */
+header {
+    position: sticky;
+    top: 0;
+}
+
+.navbar{
+    display: flex;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: lightblue;  
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li{
+    margin: 0;
+}
+
+.nav-links a {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    color: black;
+}
+
+.nav-links a:hover {
+    opacity: 0.6;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    pointer-events: none;
+    cursor: default;
+}
+
+.navbar-left{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo{
+    height: 90px;
+    width: auto;
+    object-fit: contain;
+    padding-right: 100px
+}
+
+/* BODY STUFF */
+body {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 13px;
+}
+
+h2{
+    font-family: 'Raleway', serif;
+    font-size: 19px;
+}
+
+.split-section {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 40px;
+   gap: 40px;
+}
+
+.text{
+    flex:1;
+}
+
+.image {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }

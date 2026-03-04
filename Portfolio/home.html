@@ -3,27 +3,35 @@
   <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
-    <link rel="stylesheet" href="porfolio.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <!--Importing fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
 
   <body>
    <header>
-   <h1>Welcome</h1>
-   <nav>
-    <p>Home</p>
-    <p><a href="hobbies.html">Hobbies</a></p>
-    <p><a href="projects.html">Projects</a></p>
-    <p><a href="job.html">Job Experience</a></p>
+   <nav class="navbar">
+    <div class="navbar-left"></div>
+    <img src="jh.png" class="nav-logo">
+   </div>
+    <ul class="nav-links">
+    <li><a href="home.html" class="active">Home</a></li>
+    <li><a href="hobbies.html">Hobbies</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="job.html">Job Experience</a></li>
+    </ul>
    </nav>
    </header>
 
-   <main>
-    <aside>
+   <main class="split-section">
+    <div class="text">
     <h2> About me </h2>
     <h3> My name is Jaidyn Hernandez, I was born and raised in Broomfield Colorado. I am extremely creative, with a passion to bring my ideas to life. At the age of 13 I started a buisness that has made me over $80,000! I am currently pursuing my bachlors degree at CU Boulder, majoring in Creative Technology and Design Engineering.
 </h3>
-<img src="me.jpeg" alt="Me" width="350">
-    </aside>
+</div>
+<img src="me.jpeg" alt="Me" class="image">
    </main>
 
    <footer>
