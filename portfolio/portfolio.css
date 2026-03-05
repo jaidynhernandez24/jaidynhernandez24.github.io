@@ -149,6 +149,9 @@ position: relative;
 
 .left {
     text-align: left;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 5px;
 }
 
 /* COLUMN INFO */
