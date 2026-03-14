@@ -4,6 +4,9 @@ Sage: #A3A678 */
 
 
 /* NAVIGATION */
+body{
+    margin: 0;
+}
 header {
     position: sticky;
     top: 0;
@@ -12,10 +15,11 @@ header {
 
 .navbar{
     display: flex;
-    padding: 20px 20px;
+    padding: 20px;
     justify-content: space-between;
     align-items: center;
     background: #A3A678; 
+    width: 100%;
 }
 
 .nav-links{
@@ -34,7 +38,9 @@ header {
     font-family: 'Merriweather', serif;
     font-size: 16px;
     color: black;
+    text-decoration: none;
 }
+
 
 .nav-links a:hover {
     opacity: 0.6;
@@ -57,7 +63,7 @@ header {
     height: 90px;
     width: auto;
     object-fit: contain;
-    padding-right: 100px
+    padding-right: 100px;
 }
 
 header{
@@ -70,6 +76,7 @@ h1 {
     margin: 0;
     text-align: center;
     white-space: nowrap;
+    font-weight: bold;
 }
 
 .container {
@@ -80,15 +87,16 @@ h1 {
     font-family: 'Merriweather', sans-serif;
     font-size: 13px;
 } */
-
 h2{
     font-family: 'Raleway', serif;
     font-size: 23px;
+    font-weight: 550;
 }
 
 h3{
     font-family: 'Merriweather',sans-serif;
     font-size: 16px;
+    font-weight: normal;
 }
 
 /*STYLING THE IMAGE BUTTONS AND MAIN STUFF FOR HOME PAGE*/
@@ -173,10 +181,25 @@ position: relative;
     padding: 30px;
 }
 
+/* HORIZONTAL IMAGE STYLING */
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 25px;
+}
+
+.image-row img{
+    width: 33%;
+    height: 50%;
+    border-radius: 13px;
+}
 /* HOTLINK STYLING */
 .link:link{
     color:#064E40;
 }
 
 .link:hover {
-    color:#6E4F4B}
+    color:#6E4F4B;
+}
