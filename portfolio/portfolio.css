@@ -203,3 +203,43 @@ position: relative;
 .link:hover {
     color:#6E4F4B;
 }
+
+/*MAKING WEBSITE MOBILE FRIENDLY*/
+@media (max-width: 768px) {
+    .nav-links {
+        gap:20px;
+        font-size: 14px;
+    }
+
+    .image-row{
+        flex-direction: column;
+    }
+    .image-row img{
+        width: 100%;
+    }
+
+    h1{
+        white-space: normal;
+    }
+    .image-buttons{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .vertical, .horizontal {
+        flex: none;
+        width: 100%;
+        padding: 0;
+    }
+    .two-columns{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .left {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .image-buttons, .two-columns {
+        padding: 20px;
+    }
+}
