@@ -216,9 +216,9 @@ position: relative;
     .image-row{
         flex-direction: column;
     }
-    /* .image-row img{
+    .image-row img{
         width: 100%;
-    } */
+    }
 
     h1{
         white-space: normal;
