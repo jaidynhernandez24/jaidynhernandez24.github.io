@@ -1,0 +1,22 @@
+body{
+    font-family: Bubblegum Sans, sans-serif;
+    background-color: aliceblue;
+    font-size: 17px;
+}
+
+.name{
+    font-size: 25px;
+}
+
+.country{
+    background-color: lightseagreen;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.generate{
+    font-family: Bubblegum Sans, sans-serif;
+    font-size: 17px;
+    padding: 7px;
+    background-color: lightseagreen;
+}
