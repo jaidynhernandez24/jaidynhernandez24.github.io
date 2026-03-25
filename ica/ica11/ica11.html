@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ica11.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <div class="name">
-  <label for="custom-name">Enter custom name:</label>
+    <div class="column1">
+  <label for="custom-name" class="centered">Enter custom name:</label>
   <input id="custom-name" type="text" placeholder="" />
 </div>
+<div class="column2">
 <fieldset class="country">
   <legend class="name">Choose locale:</legend>
   <label for="us">US</label
@@ -22,6 +24,8 @@
   <label for="uk">UK</label
   ><input id="uk" type="radio" name="uk-us" value="uk" />
 </fieldset>
+</div>
+</div>
 <div>
   <button class="generate">Generate random story</button>
 </div>
@@ -49,15 +53,15 @@ const characters = [
 "Bigfoot"];
 
 const places = [
-"the soup kitchen",
-"Disneyland",
-"the White House",
+"the moon",
+"CU Boulder",
+"Mount Everest",
 ];
 
 const events = [
-"spontaneously combusted",
-"melted into a puddle on the sidewalk",
-"turned into a slug and slithered away",
+"exploded into sparkles",
+"grew very tall and touched the clouds",
+"turned into a bird and flew away",
 ];
 
 // Partial return random string function
@@ -67,7 +71,7 @@ function returnRandomStoryString() {
     const randomPlace = randomValueFromArray(places);
     const randomEvent = randomValueFromArray(events);
 
-  let storyText = `It was 94 Fahrenheit outside, so ${randomCharacter} went for a walk. When they got to ${randomPlace}, they stared in horror for a few moments, then ${randomEvent}. Bob saw the whole thing, but was not surprised — ${randomCharacter} weighs 300 pounds, and it was a hot day.`;
+  let storyText = `It was very nice out and all responsibilites were cancelled, so ${randomCharacter} went on an adveneture. When they got to ${randomPlace}, they stared in horror for a few moments, then ${randomEvent}. Bob saw the whole thing, but was not surprised — ${randomCharacter} weighs 300 pounds, sometimes adventures are dangerous.`;
   
   return storyText;
 }

@@ -1,15 +1,40 @@
 body{
-    font-family: Bubblegum Sans, sans-serif;
-    background-color: aliceblue;
-    font-size: 17px;
+   font-family: 'Merriweather',sans-serif;
+    font-size: 16px;
+    font-weight: normal;
 }
 
-.name{
-    font-size: 25px;
+
+.name {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  font-size: 20px;
+    font-family: 'Raleway', serif;
+    font-weight: 550;
+    justify-content: center;
+}
+
+.column1 {
+  flex: 1;
+  background-color: #D5D7B9;
+  padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+
+.column2 {
+    flex: 1;
+    background-color: #D5D7B9;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 60px;
 }
 
 .country{
-    background-color: lightseagreen;
+    background-color: #A3A678;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -18,5 +43,9 @@ body{
     font-family: Bubblegum Sans, sans-serif;
     font-size: 17px;
     padding: 7px;
-    background-color: lightseagreen;
+    background-color: #A3A678;
+}
+
+.centered {
+    text-align: center;
 }
