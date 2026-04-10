@@ -1,5 +1,5 @@
 //Drawing the canvas
-const canvas = document.getElementById('myCanvas');
+const canvas = document.getElementById('drawCanvas');
 const context = canvas.getContext('2d');
 
 const brushBtn = document.getElementById('brushBtn');
