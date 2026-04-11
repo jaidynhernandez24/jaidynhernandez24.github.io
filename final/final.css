@@ -1,9 +1,48 @@
 body{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
+/* Creating the spacing/columns */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.canvas-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* All the elements canvas, paint brush, eraser */
 #drawCanvas {
     background-color: lightgray;
     width: 400px;
     height: 300px; 
+}
+
+#brush {
+
+}
+
+#eraser {
+
+}
+
+#volume {
+    margin: 0;
+    text-align: center;
 }

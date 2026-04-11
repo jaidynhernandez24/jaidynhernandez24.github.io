@@ -8,6 +8,7 @@ let isDrawing = false;
 let lastX = 0;
 let lastY = 0;
 let currentTool = 'brush';
+let currentColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
 
 //Drawing the canvas
 canvas.addEventListener('mousedown', (ev) => { //Mental note: I made "ev" short for event
@@ -19,6 +20,12 @@ canvas.addEventListener('mousedown', (ev) => { //Mental note: I made "ev" short 
    lastY = (ev.clientY - rect.top) * scaleY;
 });
 
+//Color interval 
+setInterval(() => {
+    currentColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+}, 1000);
+
+//Drawing mechanics
 canvas.addEventListener('mousemove', (ev) => {
   if (!isDrawing) return;
 const rect = canvas.getBoundingClientRect();
@@ -30,7 +37,7 @@ const y = (ev.clientY - rect.top) * scaleY;
   if (currentTool === 'brush') {
     context.lineWidth = 3;
     context.lineCap = 'round'
-    context.strokeStyle = 'blue';
+ context.strokeStyle = currentColor;
     context.beginPath();
     context.moveTo(lastX, lastY);
     context.lineTo(x, y);
@@ -55,12 +62,12 @@ canvas.addEventListener('mouseup', () => {
 });
 
 // Brush
-brushBtn.addEventListener('click', () => {
+brush.addEventListener('click', () => {
   currentTool = 'brush';
 });
 
 // Eraser
-eraserBtn.addEventListener('click', () => {
+eraser.addEventListener('click', () => {
   currentTool = 'eraser';
 });
 
