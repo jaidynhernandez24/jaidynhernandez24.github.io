@@ -1,4 +1,8 @@
-.drawCanvas {
+body{
+
+}
+
+#drawCanvas {
     background-color: lightgray;
     width: 400px;
     height: 300px; 
